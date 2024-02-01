@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basic</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 100%;
+        }
+
+        /* Header */
+        .bendera {
+            width: 30px;
+        }
+
+        .indo {
+            background-color: rgb(231, 231, 231);
+            display: flex;
+            border-radius: 10px;
+            padding: 10px;
+            border-style: dashed;
+            border-color: grey;
+        }
+
+        .indo:hover {
+            background-color: gray;
+            cursor: pointer;
+        }
+
+
+        .pencarian {
+            background-color: rgb(231, 231, 231);
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .cari {
+            width: 400px;
+            background-color: rgb(231, 231, 231);
+            border: 0ch;
+        }
+
+        .cari:focus {
+            width: 700px;
+        }
+
+        .top {
+            display: flex;
+            justify-content: right;
+            gap: 10px;
+            padding: 5px;
+            align-items: center;
+        }
+
+        .atas {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 15px;
+        }
+
+        .nol {
+            background-color: pink;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        .jajan:hover {
+            transform: scale(0.8);
+            cursor: pointer;
+
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        nav>a {
+            color: black;
+            font-size: larger;
+            font-weight: 700;
+        }
+
+        nav>a:hover {
+            transform: scale(0.8);
+            cursor: pointer;
+        }
+
+        .barang {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            text-align: center;
+            font-weight: 500;
+            row-gap: 40px;
+            padding-top: 20px;
+        }
+
+        article>div>img:hover {
+            transform: scale(0.8);
+            cursor: pointer;
+        }
+
+        button {
+            background-color: pink;
+            border-radius: 10px;
+            border-color: rgb(241, 124, 144);
+            width: 300px;
+            height: 100px;
+            padding: 10px;
+            font-size: x-large;
+            color: black;
+        }
+
+        button>a {
+            text-decoration-line: none;
+            color: black;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+            color: black;
+
+        }
+
+        button:hover {
+            color: rgb(173, 73, 90);
+            background-color: beige;
+            transform: scale(1.2);
+        }
+
+        .dll {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+
+        .medsos {
+            display: flex;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 30px;
+            background-color: rgb(245, 224, 227);
+        }
+
+        .sub {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .shop {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        footer>div>a {
+            text-decoration-line: none;
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <div class="indo">
+                <div>
+                    <img class="bendera"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/1024px-Flag_of_Indonesia.svg.png">
+                </div>
+                <span>IDR > </span>
+            </div>
+
+            <div class="pencarian">
+                <input class="cari" type="text" placeholder="Search..">
+                <span class="fa fa-search"></span>
+            </div>
+        </div>
+
+        <div class="atas">
+            <div>
+                <img class="logo"
+                    src=" //notebooktherapy.com/cdn/shop/files/notebook-therapy_5c35a485-856a-4245-9bb4-ff74a75bbf44.png?v=1649853296 "
+                    alt="NotebookTherapy" width="400px">
+            </div>
+
+            <div class="jajan">
+                <i class="fa fa-shopping-bag"></i>
+                <span>Shopping Cart</span>
+                <span class="nol">0</span>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#allcategories">All categories 👇</a>
+        <a href="#bestsellers">Best sellers</a>
+        <a href="#newestitems">Newest items</a>
+        <a href="#bulletjurnal">Bullet Jurnal</a>
+        <a href="#tsuki">Tsuki 🌙</a>
+        <a href="#hinoki">Hinoki 🌲 </a>
+        <a href="#seasonallaunches">Seasonal Launches</a>
+    </nav>
+
+    <div>
+        <img src="//notebooktherapy.com/cdn/shop/files/our-letters-mob.jpg?v=1705572941" width="100%">
+    </div>
+
+    <article class="barang">
+        <div class=>
+            <img src="https://notebooktherapy.com/cdn/shop/products/0120_00763_360x.jpg?v=1672662415">
+            <p>Tsuki Bullet Journal Stencil Set ☾</p>
+            <p>Rp 487.251,71 IDR</p>
+        </div>
+
+        <div>
+            <img src="https://notebooktherapy.com/cdn/shop/products/moonflower5_360x.jpg?v=1591867703">
+            <p>Tsuki 'Moonflower' Luxury Bullet Journal ☾</p>
+            <p>from Rp 487.251,71 IDR</p>
+        </div>
+
+        <div>
+            <img src="https://notebooktherapy.com/cdn/shop/products/ezgif.com-webp-to-jpg_11_360x.jpg?v=1571452068">
+            <p>Cord Tote Bag</p>
+            <p>Rp 534.592,83 IDR Rp 377.156,10 IDR</p>
+        </div>
+
+        <div>
+            <img
+                src="https://notebooktherapy.com/cdn/shop/files/18-lunar_mystery-notebook-la_luna-carousel_5e3f59e3-7055-4267-974b-ee801517b508_360x.jpg?v=1696427876">
+            <p>Tsuki ‘La Luna' Collector's Edition Moon Planner ☾</p>
+            <p>Rp 707.442,94 IDR</p>
+        </div>
+
+        <div>
+            <img
+                src="https://notebooktherapy.com/cdn/shop/products/3_c7f58a42-1755-4a3b-8647-bcbeaa416ca5_360x.jpg?v=1676551657">
+            <p>Tsuki 'Nara' Limited Edition Bullet Journal ☾</p>
+            <p>Rp 880.135,76 IDR from Rp 455.795,83 IDR</p>
+        </div>
+
+        <div>
+            <img
+                src="https://notebooktherapy.com/cdn/shop/products/japenkyotobujolettering-01copy_360x.jpg?v=1654276316">
+            <p>Tsuki ‘Kyoto’ Limited Edition Bullet Journal ☾</p>
+            <p>from Rp 455.795,83 IDR</p>
+        </div>
+
+        <div>
+            <img src="https://notebooktherapy.com/cdn/shop/files/15-lunar_mystery-stamp-carousel_360x.jpg?v=1696427886">
+            <p>Tsuki ‘Lunar Mystery’ Bullet Journal Stamp Set ☾</p>
+            <p>Rp 502.979,66 IDR</p>
+        </div>
+
+        <div>
+            <img
+                src="https://notebooktherapy.com/cdn/shop/products/pop-up-letteringoriginal-16copy_360x.jpg?v=1652370200">
+            <p>Tsuki Pop-Up Pencil Case ☾</p>
+            <p>Rp 345.700,22 IDR Rp 314.244,33 IDR</p>
+        </div>
+
+        <div>
+            <img
+                src="https://notebooktherapy.com/cdn/shop/products/2copy_3e361e31-73a9-4f5c-8866-112539b91f2b_360x.jpg?v=1633918160">
+            <p>Tsuki ‘Moonlit Spells’ Washi Tapes Set ☾</p>
+            <p>Rp 471.523,77 IDR</p>
+        </div>
+
+        <div>
+            <img src="https://notebooktherapy.com/cdn/shop/products/02-halloween-stamp-carousel_e74302a6-3de2-427c-988a-eef069fec15f_360x.jpg?v=1665084092"
+                width="100%">
+            <p>Tsuki ‘Moonlit Alchemy’ Bullet Journal Stamp Set ☾</p>
+            <p>Rp 518.707,60 IDR</p>
+        </div>
+
+        <div>
+            <img src="//notebooktherapy.com/cdn/shop/files/01-Komorebi-set-carousel.jpg?v=1683042940" width="350px">
+            <p>Tsuki ‘Komorebi’ Limited Edition Bullet Journal Set ☾</p>
+            <p>Rp 1.069.185,65 IDR</p>
+        </div>
+
+        <div>
+            <img src="//notebooktherapy.com/cdn/shop/products/01-paris_collection-scrapbook-carousel.jpg?v=1681795707"
+                width="350px">
+            <p>Tsuki ‘Journée À Paris’ Scrapbook Sticker Set ☾</p>
+            <p>Rp 613.075,27 IDR</p>
+        </div>
+    </article>
+
+    <div class="btn">
+        <button><a href="#">View More</a></button>
+    </div>
+
+
+    <div class="dll">
+        <div>
+            <i class="fa fa-truck"></i>
+            <span>Free Worldwide Shipping</span>
+        </div>
+
+        <div>
+            <i class="fa fa-repeat"></i>
+            <span>Full 30-Day Return Policy</span>
+        </div>
+
+        <div>
+            <i class="fa fa-users" aria-hidden="true"></i>
+            <span>Join 1000's of stationery-addicts</span>
+        </div>
+    </div>
+
+    <footer>
+        <div class="sosmed">
+            <i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
+            <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+            <i class="fa fa-pinterest-p fa-lg" aria-hidden="true"></i>
+        </div>
+
+        <div class="info">
+            <b>Info</b>
+            <a href="#">Blog</a>
+            <a href="#">About us</a>
+            <a href="#">Sustainability</a>
+            <a href="#">Shipping & Return</a>
+            <a href="#">Common Questions</a>
+            <a href="#">Contact us</a>
+        </div>
+
+        <div class="shop">
+            <b>Shop</b>
+            <a href="#">New Additions</a>
+            <a href="#">Top Selling</a>
+            <a href="#">Motebooks</a>
+            <a href="#">Bags</a>
+            <a href="#">Pens</a>
+            <a href="#">Pensil Case</a>
+            <a href="#">Stikers</a>
+            <a href="#">Washi Tape</a>
+            <a href="#">Gift Cards</a>
+            <a href="#">More+</a>
+        </div>
+
+        <div class="sub">
+            <b>
+                Join for special updates &amp; discounts 👇
+            </b>
+            <br>
+            <input type="text" placeholder="Enter your email address" font-size="16px" height="30px">
+            <br>
+            <button type="submit">Submit</button>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

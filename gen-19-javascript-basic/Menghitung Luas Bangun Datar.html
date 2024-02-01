@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Luas Bangun Datar</title>
+</head>
+
+<body>
+    <h3>Lihat Console>>></h3>
+    <script>
+
+        console.log("Menghitung Luas Bangun Datar");
+        console.log("---------------------------------------");
+        console.log(" ");
+
+        console.log("Menghitung Luas Persegi"); //fungsi dengan cara yang paling sederhana
+        function luasPersegi() {
+            var sisi = 5;
+            var luasP = sisi * sisi;
+            console.log(luasP);
+        }
+        console.log("Luas Persegi adalah:");
+        luasPersegi();
+
+        console.log("__________________________________________________");
+        console.log("Menghitung Luas Persegi Panjang"); //Fungsi yang menggunakan parameter
+        function luasPersegiPanjang(panjang, lebar) {
+            var luasPP = panjang * lebar;
+            console.log(luasPP);
+        }
+
+        console.log("Luas Persegi Panjang 1:");
+        luasPersegiPanjang(2, 1);
+        console.log("Luas Persegi Panjang 2: ");
+        luasPersegiPanjang(5, 3);
+
+
+        console.log("__________________________________________________");
+        console.log("Menghitung Luas Segitiga"); //Fungsi dengan Return
+        function luasSegitiga(alas, tinggi) {
+            var luasSegi = alas * tinggi / 2;
+            return luasSegi;
+        }
+
+        console.log("Luas Segitiga :  " + luasSegitiga(4, 3));
+
+
+
+        console.log("__________________________________________________");
+        console.log("Menghitung Luas Jajar Genjang"); //function expression
+        var luasJajarGenjang = function (alasJG, tinggiJG) {
+            var luasJajarG = alasJG * tinggiJG;
+            console.log(luasJajarG);
+        };
+
+        console.log("Luas Gajar Genjang 1: ");
+        luasJajarGenjang(3, 1);
+        console.log("Luas Gajar Genjang 2: ");
+        luasJajarGenjang(2, 5);
+
+
+        console.log("__________________________________________________");
+        console.log("Menghitung Luas Lingkaran"); //Arrow Function
+        var luasLingkaran = (r) => {
+            var luasLing = 3.14 * r * r;
+            console.log(luasLing);
+        }
+
+        console.log("Luas Lingkaran 1: ");
+        luasLingkaran(1);
+        console.log("Luas Lingkaran 2: ");
+        luasLingkaran(10)
+
+    </script>
+</body>
+
+</html>
