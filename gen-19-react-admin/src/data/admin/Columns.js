@@ -1,0 +1,30 @@
+export const column=[
+    {
+        Header:"Id",
+        accessor:"id"
+    },
+    {
+        Header:"Name",
+        accessor:"name"
+    },
+    {
+        Header:"Price",
+        accessor:"price"
+    },
+    {
+        Header:"Price Discound",
+        accessor:"priceDiscount"
+    },
+    {
+        Header:"Review",
+        accessor:"review"
+    },
+    {
+        Header:"Star",
+        accessor:"star"
+    },
+    {
+        Header:"Description",
+        accessor:"description"
+    },
+]
