@@ -1,0 +1,2 @@
+export const CHECKOUT_PRODUCT = "CHECKOUT_PRODUCT";
+export const CART_PRODUCT = "CART_PRODUCT";
